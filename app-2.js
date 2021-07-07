@@ -20,12 +20,12 @@ var sign_out = document.querySelector("#signOut");
 // check if user is logged in or not
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        if(window.location.pathname != '/shop.html'){
-            window.location = 'shop.html';
+        if(window.location.pathname != '/shop-1.html'){
+            window.location = 'shop-1.html';
         }
     } else {
         if(window.location.pathname === '/home.html'){
-            window.location = 'index-2.html';
+            window.location = 'index.html';
         }
     }
 });
@@ -39,7 +39,7 @@ if(form){
     
         firebase.auth().signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
-            window.location = 'shop.html';
+            window.location = 'shop-1.html';
         })
         .catch((error) => {
             message.style.display = 'block';
@@ -60,7 +60,7 @@ if(r_form){
     
         firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
-            window.location = 'shop.html';
+            window.location = 'shop-1.html';
         })
         .catch((error) => {
             message.style.display = 'block';
@@ -82,7 +82,7 @@ if(reset_form){
         .then((userCredential) => {
             message.style.display = 'block';
             message_value.innerText = 'Email has been send!';
-            window.location = 'index-2.html';
+            window.location = 'index.html';
         })
         .catch((error) => {
             message.style.display = 'block';
@@ -98,7 +98,7 @@ if(reset_form){
 if(sign_out){
     sign_out.addEventListener('click', function(e) {
         firebase.auth().signOut().then(() => {
-            window.location = 'index-2.html';
+            window.location = 'index.html';
         }).catch((error) => {
         // An error happened.
         });
