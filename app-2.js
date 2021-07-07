@@ -1,11 +1,11 @@
 // Your web app's Firebase configuration (ENTER YOUR FIREBASE CONFIGURATION DETAILS)
 var firebaseConfig = {
-    apiKey: "AIzaSyCkVN4LzfWhjtBlR0JtLwWADnqNX-wV0ek",
-    authDomain: "nonkuy-movie.firebaseapp.com",
-    projectId: "nonkuy-movie",
-    storageBucket: "nonkuy-movie.appspot.com",
-    messagingSenderId: "1028577477155",
-    appId: "1:1028577477155:web:566243c61b5e702c3aa796"
+    apiKey: "AIzaSyD0kxy9tAc8ygYixRWDl6OLZn1zEZoZIZY",
+    authDomain: "olshop-andre.firebaseapp.com",
+    projectId: "olshop-andre",
+    storageBucket: "olshop-andre.appspot.com",
+    messagingSenderId: "1059137440049",
+    appId: "1:1059137440049:web:e59b72a9e0ef8932c98810"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
